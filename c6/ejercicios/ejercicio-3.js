@@ -5,3 +5,11 @@
 //
 // Pista: usa fs.readFileSync(ruta, 'utf8') y luego split('\n').length.
 // =====================================================================
+
+const fs = require('fs');
+const contenido = fs.readFileSync('./frases.txt', 'utf8');
+
+const lineas = contenido.split('\n');
+const numeroDeLineas = lineas.length;
+
+console.log(`El archivo tiene ${numeroDeLineas} líneas.`);
