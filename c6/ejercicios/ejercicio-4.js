@@ -9,3 +9,13 @@
 //   const { cuadrado } = require('./matematicas');
 //   console.log(cuadrado(5));   // 25
 // =====================================================================
+
+const { cuadrado, cubo, esPar } = require('./matematicas');
+
+cuadrado(5);
+
+cubo(10);
+
+esPar(5);
+
+esPar(8);
