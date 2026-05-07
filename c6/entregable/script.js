@@ -4,10 +4,11 @@ const { z } = window.Zod;
 // Esquema para validar los datos del formulario
 const registerSchema = z.object({
     // PISTA: Define que el nombre debe ser una cadena no vacía.
-
+    name: z.string().min(3, "El nombre es requerido"),
     // PISTA: Valida que el correo tenga el formato correcto.
-
+    email: z.string().email("Correo invalido"),
     // PISTA: La contraseña debe tener al menos 6 caracteres.
+    password: z.string().min(8, "La contraseña debe ser minimo 8 caracteres")
 
 });
 
@@ -23,7 +24,9 @@ document.getElementById("registerForm").addEventListener("submit", (event) => {
 
     try {
         // PISTA: Usa el método correcto de Zod para validar el esquema.
-        //registerSchema.___?___(formData);
+        //registerSchema.___?___(formData); // parse
+        registerSchema.parse(formData)
+        document.getElementById("errors").textContent = "";
         alert("¡Registro exitoso!");
     } catch (error) {
         // PISTA: Muestra los mensajes de error en la página.
