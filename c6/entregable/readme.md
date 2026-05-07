@@ -7,7 +7,8 @@ Con este proyecto esperamos que puedas:
 1. Practicar el uso de Zod para validar datos de un formulario.
 2. Implementar validación en tiempo real para mejorar la experiencia del usuario.
 3. Comprender cómo manejar errores de validación y mostrar mensajes amigables.
-Validación de un Formulario de Registro con Zod
+
+# Validación de un Formulario de Registro con Zod
 Crearás un formulario de registro que solicite al usuario su **nombre**, **correo electrónico**, y **contraseña**. Los datos ingresados deben validarse utilizando la biblioteca **Zod** antes de enviarlos al servidor. El formulario debe mostrar mensajes de error claros si los datos no son válidos.
 
 ## Instrucciones para resolver el problema:
