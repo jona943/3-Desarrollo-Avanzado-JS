@@ -1,5 +1,3 @@
-import './style.css';
-
 const numeroSecreto = Math.floor(Math.random() * 100) + 1;
 const inputNumero = document.getElementById('numero');
 const botonAdivinar = document.getElementById('adivinar');
