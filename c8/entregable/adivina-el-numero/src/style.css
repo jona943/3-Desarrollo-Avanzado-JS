@@ -1,22 +1,64 @@
 body {
-    font-family: sans-serif;
-    text-align: center;
+  background-color: #fff5eb;
+  color: #5a4b3f;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-#numero {
-    padding: 5px;
-    margin-right: 10px;
+.container {
+  background-color: #ffe4cc;
+  padding: 2.5rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 0 #ffd1a3;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+
+h1 {
+  color: #ff9f4d;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+input[type="number"] {
+  border: 3px solid #ffcc99;
+  border-radius: 12px;
+  padding: 12px;
+  width: 80px;
+  font-size: 1.1rem;
+  color: #5a4b3f;
+  background-color: #ffffff;
+  outline: none;
+  margin-bottom: 1rem;
 }
 
 button {
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+  background-color: #ffb366;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 0 #e68a00;
+  display: block;
+  margin: 0.5rem auto;
 }
 
 #mensaje {
-    margin-top: 10px;
-    font-weight: bold;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #e67e22;
+  min-height: 1.5rem;
 }
